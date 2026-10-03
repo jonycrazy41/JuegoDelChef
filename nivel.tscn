@@ -1,8 +1,9 @@
 [gd_scene format=4 uid="uid://bd5wmvofq08i1"]
 
-[ext_resource type="Texture2D" uid="uid://seo30w63e1lm" path="res://sprites/professional_kitchen.png" id="1_7gdj4"]
-[ext_resource type="Texture2D" uid="uid://rah0gw10rvwy" path="res://sprites/professional_kitchen_room_door_tiles.png" id="2_j87l1"]
-[ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://sprites/professional_kitchen_withshadows.png" id="3_ymy7k"]
+[ext_resource type="Texture2D" uid="uid://seo30w63e1lm" path="res://Sprites/professional_kitchen.png" id="1_7gdj4"]
+[ext_resource type="Texture2D" uid="uid://rah0gw10rvwy" path="res://Sprites/professional_kitchen_room_door_tiles.png" id="2_j87l1"]
+[ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://Sprites/professional_kitchen_withshadows.png" id="3_ymy7k"]
+[ext_resource type="PackedScene" uid="uid://br2mftco4hxng" path="res://Escenas/ChefPJ.tscn" id="4_j87l1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vttml"]
 texture = ExtResource("1_7gdj4")
@@ -3165,3 +3166,6 @@ tile_set = SubResource("TileSet_l6nsn")
 scale = Vector2(0.5555556, 0.5555556)
 tile_map_data = PackedByteArray("AAAzABYAAAANAAIAAABDABYAAAANAAIAAABDABcAAAANAAIAAABDACEAAAANAAIAAAAzACEAAAANAAIAAAAzACIAAAANAAIAAAAJACEAAAANAAIAAAAJABYAAAANAAIAAAAJABcAAAANAAIAAAAaABYAAAANAAIAAAAaACEAAAANAAIAAAAaACIAAAANAAIAAAAKABcAAAAOAAMAAAAaABcAAAAOAAMAAAANAAsAAAAQAAIAAAANAAwAAAAQAAMAAAAOAAsAAAARAAIAAAAOAAwAAAARAAMAAAAPAAsAAAASAAIAAAAPAAwAAAASAAMAAAAQAAsAAAATAAIAAAAQAAwAAAATAAMAAAARAAsAAAAUAAIAAAARAAwAAAAUAAMAAAAyAA4AAAAUAAAAAAAyAA8AAAAUAAEAAAAzAA4AAAAVAAAAAAAzAA8AAAAVAAEAAAAJACIAAAAIAAIAAAAJACMAAAAIAAMAAAAbACEAAAAJAAIAAAAbACIAAAAJAAMAAAAbABYAAAAKAAIAAAAbABcAAAAKAAMAAAALABYAAAAJAAIAAAALABcAAAAJAAMAAAAzABcAAAAIAAIAAAAzABgAAAAIAAMAAABGABYAAAAKAAIAAABGABcAAAAKAAMAAAA0ACEAAAALAAIAAAA0ACIAAAALAAMAAABDACIAAAAMAAIAAABDACMAAAAMAAMAAABIAA0AAAAKAAAAAABIAA4AAAAKAAEAAABIAA8AAAAKAAEAAABJAA4AAAAKAAEAAABJAA8AAAAKAAEAAABJAA0AAAAKAAAAAABKAA4AAAAKAAEAAABKAA8AAAAKAAEAAABKAA0AAAAKAAAAAAA0ABcAAAANAAUAAABEABcAAAANAAUAAAALACIAAAAJAAQAAAALACMAAAAJAAUAAAANAA4AAAAJAAIAAAANAA8AAAAJAAMAAAAOAA4AAAAJAAIAAAAOAA8AAAAJAAMAAAAQAA4AAAAJAAIAAAAQAA8AAAAJAAMAAAAPAA4AAAAJAAIAAAAPAA8AAAAJAAMAAAARAA4AAAAJAAIAAAARAA8AAAAJAAMAAAA=")
 tile_set = SubResource("TileSet_m2pct")
+
+[node name="Bruno" parent="." unique_id=1049367664 instance=ExtResource("4_j87l1")]
+position = Vector2(533, 633)

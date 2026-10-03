@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://seo30w63e1lm"
-path="res://.godot/imported/professional_kitchen.png-c34157fef015cd879886e4a163d76b88.ctex"
+path="res://.godot/imported/professional_kitchen.png-2587777fddc73fa905c06383d1df4ec9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/professional_kitchen.png"
-dest_files=["res://.godot/imported/professional_kitchen.png-c34157fef015cd879886e4a163d76b88.ctex"]
+source_file="res://Sprites/professional_kitchen.png"
+dest_files=["res://.godot/imported/professional_kitchen.png-2587777fddc73fa905c06383d1df4ec9.ctex"]
 
 [params]
 
