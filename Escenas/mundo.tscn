@@ -1,9 +1,3 @@
 [gd_scene format=3 uid="uid://kus0fo384bj"]
 
-[ext_resource type="Texture2D" uid="uid://ddwsirpbynyli" path="res://sprites/jijooo.png" id="1_wxucn"]
-
 [node name="Mundo" type="Node2D" unique_id=1080849639]
-
-[node name="Jijooo" type="Sprite2D" parent="." unique_id=1664395786]
-position = Vector2(342, 436)
-texture = ExtResource("1_wxucn")
