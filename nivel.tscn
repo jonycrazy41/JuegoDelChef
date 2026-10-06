@@ -3179,5 +3179,6 @@ tile_set = SubResource("TileSet_m2pct")
 
 [node name="Bruno" parent="." unique_id=1049367664 instance=ExtResource("4_j87l1")]
 position = Vector2(533, 633)
+collision_mask = 2
 
 [node name="Node2D" parent="." unique_id=421397076 instance=ExtResource("5_vttml")]
