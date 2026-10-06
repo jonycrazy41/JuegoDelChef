@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://rah0gw10rvwy" path="res://sprites/professional_kitchen_room_door_tiles.png" id="2_j87l1"]
 [ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://sprites/professional_kitchen_withshadows.png" id="3_ymy7k"]
 [ext_resource type="PackedScene" uid="uid://br2mftco4hxng" path="res://Escenas/ChefPJ.tscn" id="4_j87l1"]
+[ext_resource type="PackedScene" uid="uid://c0h2gsm1xtbcp" path="res://enemigo.tscn" id="5_vttml"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j87l1"]
 texture = ExtResource("1_7gdj4")
@@ -3178,3 +3179,5 @@ tile_set = SubResource("TileSet_m2pct")
 
 [node name="Bruno" parent="." unique_id=1049367664 instance=ExtResource("4_j87l1")]
 position = Vector2(533, 633)
+
+[node name="Node2D" parent="." unique_id=421397076 instance=ExtResource("5_vttml")]

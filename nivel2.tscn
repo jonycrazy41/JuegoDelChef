@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://rah0gw10rvwy" path="res://sprites/professional_kitchen_room_door_tiles.png" id="2_wht6e"]
 [ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://sprites/professional_kitchen_withshadows.png" id="3_wqgsj"]
 [ext_resource type="PackedScene" uid="uid://br2mftco4hxng" path="res://Escenas/ChefPJ.tscn" id="4_8g6xw"]
+[ext_resource type="PackedScene" uid="uid://dcc8h75tgkud2" path="res://cucaracha.tscn" id="5_wht6e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3jv3p"]
 texture = ExtResource("1_306hj")
@@ -2331,3 +2332,21 @@ tile_set = SubResource("TileSet_wlu4u")
 
 [node name="Bruno" parent="." unique_id=1049367664 instance=ExtResource("4_8g6xw")]
 position = Vector2(533, 633)
+
+[node name="Cucaracha 1" parent="." unique_id=2018705945 instance=ExtResource("5_wht6e")]
+position = Vector2(7, 283)
+
+[node name="Cucaracha 2" parent="Cucaracha 1" unique_id=2106330309 instance=ExtResource("5_wht6e")]
+position = Vector2(-5, 178)
+
+[node name="Cucaracha 3" parent="Cucaracha 1" unique_id=2022852519 instance=ExtResource("5_wht6e")]
+position = Vector2(-12, 364)
+
+[node name="Cucaracha 4" parent="Cucaracha 1/Cucaracha 3" unique_id=1223897576 instance=ExtResource("5_wht6e")]
+position = Vector2(675, -366)
+
+[node name="Cucaracha 5" parent="Cucaracha 1/Cucaracha 3/Cucaracha 4" unique_id=1235343755 instance=ExtResource("5_wht6e")]
+position = Vector2(7, 172)
+
+[node name="Cucaracha  6" parent="Cucaracha 1/Cucaracha 3/Cucaracha 4/Cucaracha 5" unique_id=1686398137 instance=ExtResource("5_wht6e")]
+position = Vector2(-11, 190)

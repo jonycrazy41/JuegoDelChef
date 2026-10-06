@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dcc8h75tgkud2"]
+
+[ext_resource type="Script" uid="uid://ds3y4qqvsd75k" path="res://cucaracha_!.gd" id="1_nvbbs"]
+[ext_resource type="Texture2D" uid="uid://bbmiej2fa6bqq" path="res://sprites/Firebug1.png" id="2_qr37c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b52nb"]
+size = Vector2(30, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pb3um"]
+size = Vector2(20, 77)
+
+[node name="Node2D" type="Node2D" unique_id=2018705945]
+
+[node name="Cucaracha_!" type="CharacterBody2D" parent="." unique_id=1555785146]
+script = ExtResource("1_nvbbs")
+
+[node name="Sprite2D" type="Sprite2D" parent="Cucaracha_!" unique_id=2137357303]
+position = Vector2(74, 32)
+texture = ExtResource("2_qr37c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cucaracha_!" unique_id=523468416]
+position = Vector2(74, 30)
+shape = SubResource("RectangleShape2D_b52nb")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1561772421]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=939412983]
+position = Vector2(27, 38)
+shape = SubResource("RectangleShape2D_pb3um")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=352919088]
+position = Vector2(481, 41)
+shape = SubResource("RectangleShape2D_pb3um")
