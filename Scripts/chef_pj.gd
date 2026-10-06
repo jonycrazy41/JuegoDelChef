@@ -1,7 +1,22 @@
 extends CharacterBody2D
 #hola profe soy Jonathan Alame
 const SPEED = 200.0
+const DuracionAtaque = 0.30
+const AnguloSarten1 = 70.0
+const AnguloSarten2 = -10.0
+const MangoOffset = 6
+
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var sarten: Sprite2D = $Sarten
+@onready var hitbox: Area2D = $Sarten/Hitbox
+
+var EstaAtacanddo = false
+var miraaladerecha = false
+
+func _ready() -> void:
+	sarten.visible = false
+	hitbox.monitoring = false
+	hitbox.body_entered.connect(_on_hitbox_body_entered)
 
 func _physics_process(float) -> void:
 	var direction := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
@@ -17,11 +32,39 @@ func _physics_process(float) -> void:
 	
 	if direction.x < 0:
 		sprite.flip_h = true
+		miraaladerecha = false
 	else:
 		sprite.flip_h = false
+		miraaladerecha = true
 	
 	if Input.is_action_just_pressed("ClickIzquierdo"):
-		pass
+		ataque()
+
+func ataque():
+	EstaAtacanddo = true
+	sarten.visible = true
+	hitbox.monitoring = true
+	
+	var side = -1.0 if miraaladerecha else 1.0
+	sarten.position = Vector2(-9 * side, 5)
+	sarten.scale.x = side #para girar el sprite manteniendo su escala
+	sarten.rotation_degrees = AnguloSarten1 * side
+	
+	var tween := create_tween()
+	tween.tween_property(sarten, "rotation_degrees",
+			AnguloSarten2 * side, DuracionAtaque)\
+		.set_trans(Tween.TRANS_QUAD)\
+		.set_ease(Tween.EASE_IN_OUT)
+	tween.tween_callback(terminarAtaque)
+
+func terminarAtaque():
+	EstaAtacanddo = false
+	sarten.visible = false
+	hitbox.monitoring = false
+
+func _on_hitbox_body_entered(body: Node) -> void:
+	if body.has_method("recibir_golpe"):
+		body.recibir_golpe(25)
 
 func morir():
 	get_tree().quit()

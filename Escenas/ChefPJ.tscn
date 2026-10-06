@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://iwalderyptnh" path="res://Scripts/chef_pj.gd" id="1_4lmyk"]
 [ext_resource type="Texture2D" uid="uid://ddwsirpbynyli" path="res://Sprites/jijooo.png" id="2_81m0m"]
+[ext_resource type="Texture2D" uid="uid://cft41c2b42bwe" path="res://Sprites/Sarten.png" id="3_81m0m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xe5p4"]
 atlas = ExtResource("2_81m0m")
@@ -94,6 +95,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
 size = Vector2(18, 30)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_riqys"]
+size = Vector2(20, 12.808989)
+
 [node name="Bruno" type="CharacterBody2D" unique_id=1049367664]
 scale = Vector2(2, 2)
 script = ExtResource("1_4lmyk")
@@ -106,3 +110,17 @@ frame_progress = 0.57671106
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=549970482]
 position = Vector2(1, 3)
 shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Sarten" type="Sprite2D" parent="." unique_id=1810833609]
+position = Vector2(0.99999994, 2.9999998)
+scale = Vector2(0.89, 0.89)
+texture = ExtResource("3_81m0m")
+offset = Vector2(-15, 9)
+
+[node name="Hitbox" type="Area2D" parent="Sarten" unique_id=369798712]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sarten/Hitbox" unique_id=1775771556]
+position = Vector2(-19.66292, 7.3033705)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_riqys")
