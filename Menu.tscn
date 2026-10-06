@@ -35,5 +35,14 @@ offset_bottom = 445.0
 text = "Play Escena 2 
 (provicional)"
 
+[node name="Button3" type="Button" parent="." unique_id=103117417]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 470.0
+offset_right = 1281.0
+offset_bottom = 541.0
+text = "Nivel cucarachas"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
