@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://rah0gw10rvwy" path="res://sprites/professional_kitchen_room_door_tiles.png" id="2_j87l1"]
 [ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://sprites/professional_kitchen_withshadows.png" id="3_ymy7k"]
 [ext_resource type="PackedScene" uid="uid://br2mftco4hxng" path="res://Escenas/ChefPJ.tscn" id="4_j87l1"]
-[ext_resource type="PackedScene" uid="uid://c0h2gsm1xtbcp" path="res://enemigo.tscn" id="5_vttml"]
+[ext_resource type="PackedScene" uid="uid://dcc8h75tgkud2" path="res://Escenas/cucaracha.tscn" id="5_ymy7k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j87l1"]
 texture = ExtResource("1_7gdj4")
@@ -734,6 +734,7 @@ texture = ExtResource("1_7gdj4")
 25:29/0 = 0
 26:29/0 = 0
 27:29/0 = 0
+27:29/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 28:29/0 = 0
 28:29/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 29:29/0 = 0
@@ -3154,6 +3155,9 @@ texture = ExtResource("3_ymy7k")
 [sub_resource type="TileSet" id="TileSet_m2pct"]
 sources/0 = SubResource("TileSetAtlasSource_6apml")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ymy7k"]
+size = Vector2(104.5, 821.5)
+
 [node name="nivel" type="Node2D" unique_id=717241567]
 
 [node name="Tilemap" type="Node2D" parent="." unique_id=1191906205]
@@ -3179,6 +3183,33 @@ tile_set = SubResource("TileSet_m2pct")
 
 [node name="Bruno" parent="." unique_id=1049367664 instance=ExtResource("4_j87l1")]
 position = Vector2(533, 633)
+
+[node name="Cucaracha 1" parent="." unique_id=2018705945 instance=ExtResource("5_ymy7k")]
+position = Vector2(60, 283)
+
+[node name="Cucaracha 2" parent="Cucaracha 1" unique_id=619384182 instance=ExtResource("5_ymy7k")]
+position = Vector2(-5, 178)
+
+[node name="Cucaracha 3" parent="Cucaracha 1" unique_id=1872006770 instance=ExtResource("5_ymy7k")]
+position = Vector2(-12, 364)
+
+[node name="Cucaracha 4" parent="Cucaracha 1/Cucaracha 3" unique_id=1386353173 instance=ExtResource("5_ymy7k")]
+position = Vector2(640, -364)
+
+[node name="Cucaracha 5" parent="Cucaracha 1/Cucaracha 3/Cucaracha 4" unique_id=661190489 instance=ExtResource("5_ymy7k")]
+position = Vector2(7, 172)
+
+[node name="Cucaracha  6" parent="Cucaracha 1/Cucaracha 3/Cucaracha 4/Cucaracha 5" unique_id=1095348249 instance=ExtResource("5_ymy7k")]
+position = Vector2(-11, 190)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=365764305]
+collision_layer = 4
 collision_mask = 2
 
-[node name="Node2D" parent="." unique_id=421397076 instance=ExtResource("5_vttml")]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1760402763]
+position = Vector2(-7, 399)
+shape = SubResource("RectangleShape2D_ymy7k")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1963614089]
+position = Vector2(1233.75, 395)
+shape = SubResource("RectangleShape2D_ymy7k")
