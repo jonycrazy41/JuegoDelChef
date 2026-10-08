@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://dwok3loqmtf3y" path="res://sprites/brown-eggs-removebg-preview.png" id="1_1f3ec"]
 [ext_resource type="Script" uid="uid://n5ac7fwlq6fb" path="res://huevos.gd" id="1_cspta"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_x15ge"]
-radius = 32.140316
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ss1dk"]
+size = Vector2(69, 31)
 
 [node name="Huevos" type="Area2D" unique_id=1144616664]
 script = ExtResource("1_cspta")
@@ -15,6 +15,7 @@ scale = Vector2(0.16584156, 0.1658416)
 texture = ExtResource("1_1f3ec")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1248537465]
-shape = SubResource("CircleShape2D_x15ge")
+position = Vector2(-0.5, -5.5)
+shape = SubResource("RectangleShape2D_ss1dk")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
