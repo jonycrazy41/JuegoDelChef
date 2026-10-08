@@ -11,7 +11,6 @@ const MangoOffset = 6
 @onready var hitbox: Area2D = $Sarten/Hitbox
 @onready var sonidoataque: AudioStreamPlayer = $SonidoAtaque
 
-
 var EstaAtacanddo = false
 var miraaladerecha = false
 
@@ -24,6 +23,7 @@ func _physics_process(float) -> void:
 	var direction := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = direction * SPEED
 	move_and_slide()
+	
 	
 	if direction == Vector2.ZERO:
 		if sprite.animation != "IdleAnimation":
@@ -47,7 +47,7 @@ func ataque():
 	sarten.visible = true
 	hitbox.monitoring = true
 	
-	sonidoataque.pitch_scale = randf_range(0.85, 1.2)
+	sonidoataque.pitch_scale = randf_range(0.90, 1.1)
 	sonidoataque.play()
 	
 	var side = -1.0 if miraaladerecha else 1.0
