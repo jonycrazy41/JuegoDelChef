@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dcc8h75tgkud2"]
 
-[ext_resource type="Script" uid="uid://ds3y4qqvsd75k" path="res://cucaracha_!.gd" id="1_nvbbs"]
+[ext_resource type="Script" uid="uid://ds3y4qqvsd75k" path="res://Scripts/cucaracha_!.gd" id="1_nvbbs"]
 [ext_resource type="Texture2D" uid="uid://bbmiej2fa6bqq" path="res://Sprites/Firebug1.png" id="2_qr37c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b52nb"]

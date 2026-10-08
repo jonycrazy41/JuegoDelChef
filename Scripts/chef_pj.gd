@@ -1,7 +1,7 @@
 extends CharacterBody2D
 #hola profe soy Jonathan Alame
 const SPEED = 200.0
-const DuracionAtaque = 0.30
+const DuracionAtaque = 0.25
 const AnguloSarten1 = 70.0
 const AnguloSarten2 = -10.0
 const MangoOffset = 6
@@ -9,6 +9,8 @@ const MangoOffset = 6
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var sarten: Sprite2D = $Sarten
 @onready var hitbox: Area2D = $Sarten/Hitbox
+@onready var sonidoataque: AudioStreamPlayer = $SonidoAtaque
+
 
 var EstaAtacanddo = false
 var miraaladerecha = false
@@ -37,13 +39,16 @@ func _physics_process(float) -> void:
 		sprite.flip_h = false
 		miraaladerecha = true
 	
-	if Input.is_action_just_pressed("ClickIzquierdo"):
+	if Input.is_action_just_pressed("ClickIzquierdo") and not EstaAtacanddo:
 		ataque()
 
 func ataque():
 	EstaAtacanddo = true
 	sarten.visible = true
 	hitbox.monitoring = true
+	
+	sonidoataque.pitch_scale = randf_range(0.85, 1.2)
+	sonidoataque.play()
 	
 	var side = -1.0 if miraaladerecha else 1.0
 	sarten.position = Vector2(-9 * side, 5)

@@ -36,5 +36,12 @@ func flip() -> void:
 
 func morir():
 	murio = true
-	await get_tree().create_timer(0.05).timeout
+	var tween := create_tween()
+	tween.set_parallel(true)
+	# Se aplasta: ancho x alto (ajustá los valores a gusto)
+	tween.tween_property(sprite, "scale", Vector2(1.6, 0.25), 0.10)\
+		.set_trans(Tween.TRANS_BACK)\
+		.set_ease(Tween.EASE_OUT)
+		
+	await tween.finished
 	queue_free()

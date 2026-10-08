@@ -1,11 +1,11 @@
 [gd_scene format=4 uid="uid://r0ib6vf0kq10"]
 
-[ext_resource type="Texture2D" uid="uid://bxf4bid1qxckx" path="res://sprites/Terrain (32x32).png" id="1_nb6ra"]
-[ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://sprites/professional_kitchen_withshadows.png" id="2_abqjr"]
-[ext_resource type="Script" uid="uid://doqs4ob65fxot" path="res://bruno_2.gd" id="2_wbigu"]
-[ext_resource type="Texture2D" uid="uid://2j6vi0mqswvv" path="res://sprites/Decorations (32x32).png" id="3_0qpke"]
-[ext_resource type="Texture2D" uid="uid://ddwsirpbynyli" path="res://sprites/jijooo.png" id="3_csaso"]
-[ext_resource type="Texture2D" uid="uid://72pb2ckwgq7a" path="res://sprites/Wooden_Barrel.png" id="6_rb0wr"]
+[ext_resource type="Texture2D" uid="uid://bxf4bid1qxckx" path="res://Sprites/Terrain (32x32).png" id="1_nb6ra"]
+[ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://Sprites/professional_kitchen_withshadows.png" id="2_abqjr"]
+[ext_resource type="Script" uid="uid://doqs4ob65fxot" path="res://Scripts/bruno_2.gd" id="2_wbigu"]
+[ext_resource type="Texture2D" uid="uid://2j6vi0mqswvv" path="res://Sprites/Decorations (32x32).png" id="3_0qpke"]
+[ext_resource type="Texture2D" uid="uid://ddwsirpbynyli" path="res://Sprites/jijooo.png" id="3_csaso"]
+[ext_resource type="Texture2D" uid="uid://72pb2ckwgq7a" path="res://Sprites/Wooden_Barrel.png" id="6_rb0wr"]
 [ext_resource type="PackedScene" uid="uid://relt2fdxcokh" path="res://huevos.tscn" id="7_0qpke"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0qpke"]
