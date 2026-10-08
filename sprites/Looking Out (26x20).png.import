@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rah0gw10rvwy"
-path="res://.godot/imported/professional_kitchen_room_door_tiles.png-6871c9dd48615bee3ee19afc0869a29a.ctex"
+uid="uid://cys2gjp6hlbjj"
+path="res://.godot/imported/Looking Out (26x20).png-7461fdb677e7d703c9b651d46b24f229.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/professional_kitchen_room_door_tiles.png"
-dest_files=["res://.godot/imported/professional_kitchen_room_door_tiles.png-6871c9dd48615bee3ee19afc0869a29a.ctex"]
+source_file="res://sprites/Looking Out (26x20).png"
+dest_files=["res://.godot/imported/Looking Out (26x20).png-7461fdb677e7d703c9b651d46b24f229.ctex"]
 
 [params]
 

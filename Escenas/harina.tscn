@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dwivfqo8di8lq"]
+
+[ext_resource type="Script" uid="uid://vj013psmoodr" path="res://area_2d.gd" id="1_dtyf7"]
+[ext_resource type="Texture2D" uid="uid://blecxbphqhqr7" path="res://sprites/harina2.png" id="2_wler5"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x15ge"]
+radius = 181.0
+height = 396.0
+
+[node name="Harina" type="Area2D" unique_id=946912411]
+script = ExtResource("1_dtyf7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=68472865]
+texture = ExtResource("2_wler5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1227095803]
+position = Vector2(30, -36)
+shape = SubResource("CapsuleShape2D_x15ge")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

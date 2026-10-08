@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dqfpte5mdwbw"]
+
+[ext_resource type="Script" uid="uid://cf80awlbypyx1" path="res://azucar.gd" id="1_c3gu3"]
+[ext_resource type="Texture2D" uid="uid://batpow2b633a3" path="res://sprites/azucar4.png" id="2_f1c14"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x15ge"]
+radius = 33.734257
+
+[node name="Azucar" type="Area2D" unique_id=1226001907]
+script = ExtResource("1_c3gu3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1362258129]
+position = Vector2(3, -0.9999962)
+scale = Vector2(0.17187499, 0.17187499)
+texture = ExtResource("2_f1c14")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1299039422]
+position = Vector2(0, -16)
+shape = SubResource("CircleShape2D_x15ge")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
