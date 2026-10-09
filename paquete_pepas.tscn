@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cu0i68tgebukc"]
+
+[ext_resource type="Texture2D" uid="uid://bkthhiyb3deyh" path="res://Sprites/Paquetedepepass.png" id="1_iq8hs"]
+
+[node name="PaquetePepas" type="Sprite2D" unique_id=249846140]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_iq8hs")
