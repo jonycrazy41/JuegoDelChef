@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cys2gjp6hlbjj"
-path="res://.godot/imported/Looking Out (26x20).png-a82103ffbfdb338bd6d4955e7f8ed03a.ctex"
+path="res://.godot/imported/Looking Out (26x20).png-7461fdb677e7d703c9b651d46b24f229.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Looking Out (26x20).png"
-dest_files=["res://.godot/imported/Looking Out (26x20).png-a82103ffbfdb338bd6d4955e7f8ed03a.ctex"]
+source_file="res://sprites/Looking Out (26x20).png"
+dest_files=["res://.godot/imported/Looking Out (26x20).png-7461fdb677e7d703c9b651d46b24f229.ctex"]
 
 [params]
 

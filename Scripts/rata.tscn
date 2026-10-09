@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://doipnf2umsfe0"]
+
+[ext_resource type="Script" uid="uid://dsx5i5nd4ywwp" path="res://rata.gd" id="1_mwfle"]
+[ext_resource type="Texture2D" uid="uid://csx7v74ih8ya3" path="res://chubby_rat_free/walking.png" id="2_wr06h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4roha"]
+atlas = ExtResource("2_wr06h")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikm5p"]
+atlas = ExtResource("2_wr06h")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e2htb"]
+atlas = ExtResource("2_wr06h")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tybj"]
+atlas = ExtResource("2_wr06h")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqm5h"]
+atlas = ExtResource("2_wr06h")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_em0nj"]
+atlas = ExtResource("2_wr06h")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x15ge"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4roha")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikm5p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e2htb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4tybj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqm5h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_em0nj")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x15ge"]
+radius = 5.0
+
+[node name="Rata" type="CharacterBody2D" unique_id=1244886540]
+script = ExtResource("1_mwfle")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=438453877]
+sprite_frames = SubResource("SpriteFrames_x15ge")
+frame = 4
+frame_progress = 0.7378375
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=172519269]
+position = Vector2(-1, 3)
+shape = SubResource("CircleShape2D_x15ge")

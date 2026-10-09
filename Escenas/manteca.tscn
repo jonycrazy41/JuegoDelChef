@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://do87dygxe3dd3"]
 
-[ext_resource type="Script" uid="uid://bwr4my0hxnl2m" path="res://manteca.gd" id="1_m5fnb"]
+[ext_resource type="Script" uid="uid://bwr4my0hxnl2m" path="res://Scripts/manteca.gd" id="1_m5fnb"]
 [ext_resource type="Texture2D" uid="uid://bbej3v8dr3dvn" path="res://sprites/Manteca1.png" id="2_6c68q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x15ge"]

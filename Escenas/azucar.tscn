@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dqfpte5mdwbw"]
 
-[ext_resource type="Script" uid="uid://cf80awlbypyx1" path="res://azucar.gd" id="1_c3gu3"]
+[ext_resource type="Script" uid="uid://cf80awlbypyx1" path="res://Scripts/azucar.gd" id="1_c3gu3"]
 [ext_resource type="Texture2D" uid="uid://batpow2b633a3" path="res://sprites/azucar4.png" id="2_f1c14"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x15ge"]

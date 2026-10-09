@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://relt2fdxcokh"]
 
 [ext_resource type="Texture2D" uid="uid://dwok3loqmtf3y" path="res://sprites/brown-eggs-removebg-preview.png" id="1_1f3ec"]
-[ext_resource type="Script" uid="uid://n5ac7fwlq6fb" path="res://huevos.gd" id="1_cspta"]
+[ext_resource type="Script" uid="uid://n5ac7fwlq6fb" path="res://Scripts/huevos.gd" id="1_cspta"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ss1dk"]
 size = Vector2(69, 31)

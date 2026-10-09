@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://b7qgxvw1opl62"]
+
+[ext_resource type="Script" uid="uid://bbwk1ta84s0vm" path="res://Scripts/menu.gd" id="1_xe2ru"]
+
+[node name="CanvasLayer" type="Control" unique_id=1855909598]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xe2ru")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1515856535]
+layout_mode = 0
+offset_right = 1278.0
+offset_bottom = 718.0
+color = Color(1, 0.3647059, 0.047058824, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1913598643]
+layout_mode = 0
+offset_right = 1279.0
+offset_bottom = 720.0
+
+[node name="Button" type="Button" parent="." unique_id=1754610560]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 321.0
+offset_right = 1277.0
+offset_bottom = 352.0
+text = "PLAY"
+icon_alignment = 1
+
+[node name="Button2" type="Button" parent="." unique_id=192323258]
+layout_mode = 0
+offset_top = 388.0
+offset_right = 1277.0
+offset_bottom = 445.0
+text = "Play Escena 2 
+(provicional)"
+
+[node name="Button3" type="Button" parent="." unique_id=103117417]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 470.0
+offset_right = 1281.0
+offset_bottom = 541.0
+text = "Nivel cucarachas"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

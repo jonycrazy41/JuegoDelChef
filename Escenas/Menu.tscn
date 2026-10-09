@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://b7qgxvw1opl62"]
 
-[ext_resource type="Script" uid="uid://bbwk1ta84s0vm" path="res://menu.gd" id="1_uubjt"]
+[ext_resource type="Script" uid="uid://bbwk1ta84s0vm" path="res://Scripts/menu.gd" id="1_xe2ru"]
 
 [node name="CanvasLayer" type="Control" unique_id=1855909598]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_uubjt")
+script = ExtResource("1_xe2ru")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1515856535]
 layout_mode = 0
