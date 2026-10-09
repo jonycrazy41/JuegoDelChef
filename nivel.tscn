@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://bd5wmvofq08i1"]
 
-[ext_resource type="Texture2D" uid="uid://seo30w63e1lm" path="res://Sprites/professional_kitchen.png" id="1_7gdj4"]
-[ext_resource type="Texture2D" uid="uid://rah0gw10rvwy" path="res://Sprites/professional_kitchen_room_door_tiles.png" id="2_j87l1"]
-[ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://Sprites/professional_kitchen_withshadows.png" id="3_ymy7k"]
+[ext_resource type="Texture2D" uid="uid://seo30w63e1lm" path="res://sprites/professional_kitchen.png" id="1_7gdj4"]
+[ext_resource type="Texture2D" uid="uid://rah0gw10rvwy" path="res://sprites/professional_kitchen_room_door_tiles.png" id="2_j87l1"]
+[ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://sprites/professional_kitchen_withshadows.png" id="3_ymy7k"]
 [ext_resource type="PackedScene" uid="uid://br2mftco4hxng" path="res://Escenas/ChefPJ.tscn" id="4_j87l1"]
 [ext_resource type="PackedScene" uid="uid://dcc8h75tgkud2" path="res://Escenas/cucaracha.tscn" id="5_ymy7k"]
 
