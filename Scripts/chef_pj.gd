@@ -1,7 +1,7 @@
 extends CharacterBody2D
 #hola profe soy Jonathan Alame
 const SPEED = 200.0
-const DuracionAtaque = 0.25
+const DuracionAtaque = 0.28
 const AnguloSarten1 = 70.0
 const AnguloSarten2 = -10.0
 const MangoOffset = 6
@@ -14,6 +14,7 @@ const MangoOffset = 6
 
 var EstaAtacanddo = false
 var miraaladerecha = false
+var estaenfatality = false
 
 func _ready() -> void:
 	sarten.visible = false
@@ -21,6 +22,11 @@ func _ready() -> void:
 	hitbox.body_entered.connect(_on_hitbox_body_entered)
 
 func _physics_process(float) -> void:
+	if estaenfatality:
+		velocity = Vector2.ZERO
+		move_and_slide()
+		return
+	
 	var direction := Input.get_vector("izquierda", "derecha", "Arriba", "Abajo")
 	velocity = direction * SPEED
 	move_and_slide()
@@ -73,6 +79,16 @@ func terminarAtaque():
 	EstaAtacanddo = false
 	sarten.visible = false
 	hitbox.monitoring = false
+
+func EntraEnFatality():
+	estaenfatality = true
+	velocity = Vector2.ZERO
+	if sprite.sprite_frames.has_animation("fatalidad"):
+		sprite.play("fatalidad")
+
+func SaledeFatality():
+	estaenfatality = false
+	sprite.play("IdleAnimation")
 
 func _on_hitbox_body_entered(body: Node) -> void:
 	if body.has_method("recibir_golpe"):

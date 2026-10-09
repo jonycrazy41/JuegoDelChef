@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://n8sv0yr6dxuw"]
+
+[ext_resource type="Texture2D" uid="uid://duut445bderrk" path="res://Sprites/horno.png" id="1_k3onv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_land4"]
+atlas = ExtResource("1_k3onv")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8y37r"]
+atlas = ExtResource("1_k3onv")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bhunq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_land4")
+}],
+"loop": 0,
+"name": &"apagadooo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8y37r")
+}],
+"loop": 1,
+"name": &"prendidooo",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_riqys"]
+size = Vector2(29, 27)
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=978014273]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1498287413]
+sprite_frames = SubResource("SpriteFrames_bhunq")
+animation = &"prendidooo"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=65882993]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("RectangleShape2D_riqys")

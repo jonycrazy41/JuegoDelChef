@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://br2mftco4hxng"]
 
 [ext_resource type="Script" uid="uid://iwalderyptnh" path="res://Scripts/chef_pj.gd" id="1_4lmyk"]
-[ext_resource type="Texture2D" uid="uid://ddwsirpbynyli" path="res://sprites/jijooo.png" id="2_81m0m"]
-[ext_resource type="Texture2D" uid="uid://cft41c2b42bwe" path="res://sprites/Sarten.png" id="3_81m0m"]
+[ext_resource type="Texture2D" uid="uid://ddwsirpbynyli" path="res://Sprites/jijooo.png" id="2_81m0m"]
+[ext_resource type="Texture2D" uid="uid://cft41c2b42bwe" path="res://Sprites/Sarten.png" id="3_81m0m"]
 [ext_resource type="AudioStream" uid="uid://gje7finr0tqt" path="res://Audio/SartenGolpe.mp3" id="4_60vie"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xe5p4"]
@@ -44,6 +44,10 @@ region = Rect2(96, 48, 48, 48)
 [sub_resource type="AtlasTexture" id="AtlasTexture_hlsmk"]
 atlas = ExtResource("2_81m0m")
 region = Rect2(144, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60vie"]
+atlas = ExtResource("2_81m0m")
+region = Rect2(144, 144, 48, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_riqys"]
 animations = [{
@@ -91,6 +95,14 @@ animations = [{
 "loop": 1,
 "name": &"RunAnimation",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60vie")
+}],
+"loop": 0,
+"name": &"fatalidad",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
@@ -105,8 +117,7 @@ script = ExtResource("1_4lmyk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=755646668]
 sprite_frames = SubResource("SpriteFrames_riqys")
-animation = &"IdleAnimation"
-frame_progress = 0.57671106
+animation = &"fatalidad"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=835821730]
 scale = Vector2(0.1, 0.065)

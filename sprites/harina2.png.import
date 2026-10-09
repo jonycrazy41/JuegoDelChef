@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blecxbphqhqr7"
-path="res://.godot/imported/harina2.png-565184257a7de268fb1dbf5fb13374b7.ctex"
+path="res://.godot/imported/harina2.png-6a32619912e4c1d7411756c12b53c9c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/harina2.png"
-dest_files=["res://.godot/imported/harina2.png-565184257a7de268fb1dbf5fb13374b7.ctex"]
+source_file="res://Sprites/harina2.png"
+dest_files=["res://.godot/imported/harina2.png-6a32619912e4c1d7411756c12b53c9c2.ctex"]
 
 [params]
 

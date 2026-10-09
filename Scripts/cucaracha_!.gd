@@ -7,7 +7,7 @@ var direction: int = 1
 var salud: int = 50
 var murio: bool = false
 
-signal muriosenial
+signal muriosenial(posicion: Vector2)
 
 @onready var sprite: Sprite2D = $Sprite2D
 
@@ -38,14 +38,17 @@ func flip() -> void:
 
 func morir():
 	murio = true
+	
+	muriosenial.emit(global_position)
+	
+	await get_tree().create_timer(0.2, true, false, true).timeout
+	
 	var tween := create_tween()
 	tween.set_parallel(true)
-	# Se aplasta: ancho x alto (ajustá los valores a gusto)
-	tween.tween_property(sprite, "scale", Vector2(1.6, 0.25), 0.10)\
+	
+	tween.tween_property(sprite, "scale", Vector2(1.6, 0.25), 0.15)\
 		.set_trans(Tween.TRANS_BACK)\
 		.set_ease(Tween.EASE_OUT)
-	
-	muriosenial.emit()
 	
 	await tween.finished
 	queue_free()
