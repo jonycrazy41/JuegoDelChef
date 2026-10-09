@@ -7,6 +7,8 @@ var direction: int = 1
 var salud: int = 50
 var murio: bool = false
 
+signal muriosenial
+
 @onready var sprite: Sprite2D = $Sprite2D
 
 func _physics_process(_delta: float) -> void:
@@ -42,6 +44,8 @@ func morir():
 	tween.tween_property(sprite, "scale", Vector2(1.6, 0.25), 0.10)\
 		.set_trans(Tween.TRANS_BACK)\
 		.set_ease(Tween.EASE_OUT)
-		
+	
+	muriosenial.emit()
+	
 	await tween.finished
 	queue_free()

@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://br2mftco4hxng"]
 
 [ext_resource type="Script" uid="uid://iwalderyptnh" path="res://Scripts/chef_pj.gd" id="1_4lmyk"]
-[ext_resource type="Texture2D" uid="uid://ddwsirpbynyli" path="res://sprites/jijooo.png" id="2_81m0m"]
-[ext_resource type="Texture2D" uid="uid://cft41c2b42bwe" path="res://sprites/Sarten.png" id="3_81m0m"]
+[ext_resource type="Texture2D" uid="uid://ddwsirpbynyli" path="res://Sprites/jijooo.png" id="2_81m0m"]
+[ext_resource type="Texture2D" uid="uid://cft41c2b42bwe" path="res://Sprites/Sarten.png" id="3_81m0m"]
 [ext_resource type="AudioStream" uid="uid://gje7finr0tqt" path="res://Audio/SartenGolpe.mp3" id="4_60vie"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xe5p4"]
@@ -138,4 +138,4 @@ shape = SubResource("RectangleShape2D_riqys")
 
 [node name="SonidoAtaque" type="AudioStreamPlayer" parent="." unique_id=116468717]
 stream = ExtResource("4_60vie")
-volume_db = -5.0
+volume_db = -20.0

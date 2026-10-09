@@ -1,11 +1,12 @@
 [gd_scene format=4 uid="uid://dsx2eal4drh8c"]
 
-[ext_resource type="Texture2D" uid="uid://seo30w63e1lm" path="res://sprites/professional_kitchen.png" id="1_306hj"]
-[ext_resource type="Texture2D" uid="uid://rah0gw10rvwy" path="res://sprites/professional_kitchen_room_door_tiles.png" id="2_wht6e"]
-[ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://sprites/professional_kitchen_withshadows.png" id="3_wqgsj"]
+[ext_resource type="Script" uid="uid://b5g5jgfhvwify" path="res://Scripts/nivel_2.gd" id="1_3cb82"]
+[ext_resource type="Texture2D" uid="uid://seo30w63e1lm" path="res://Sprites/professional_kitchen.png" id="1_306hj"]
+[ext_resource type="Texture2D" uid="uid://rah0gw10rvwy" path="res://Sprites/professional_kitchen_room_door_tiles.png" id="2_wht6e"]
+[ext_resource type="Texture2D" uid="uid://dchlil28h0s2u" path="res://Sprites/professional_kitchen_withshadows.png" id="3_wqgsj"]
 [ext_resource type="PackedScene" uid="uid://br2mftco4hxng" path="res://Escenas/ChefPJ.tscn" id="4_8g6xw"]
 [ext_resource type="Script" uid="uid://ds3y4qqvsd75k" path="res://Scripts/cucaracha_!.gd" id="5_pi7n1"]
-[ext_resource type="Texture2D" uid="uid://bbmiej2fa6bqq" path="res://sprites/Firebug1.png" id="6_3cb82"]
+[ext_resource type="Texture2D" uid="uid://bbmiej2fa6bqq" path="res://Sprites/Firebug1.png" id="6_3cb82"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3jv3p"]
 texture = ExtResource("1_306hj")
@@ -2326,6 +2327,7 @@ size = Vector2(2582, 64)
 size = Vector2(32, 865)
 
 [node name="Node2D" type="Node2D" unique_id=1531192435]
+script = ExtResource("1_3cb82")
 
 [node name="Tilemap" type="Node2D" parent="." unique_id=608610056]
 scale = Vector2(1.8, 1.8)
@@ -2363,11 +2365,11 @@ tile_map_data = PackedByteArray("AAAAAAYAAAAAABIAAAAAAAcAAAAAABMAAAAAAAgAAAAAABQ
 tile_set = SubResource("TileSet_wlu4u")
 
 [node name="Bruno" parent="." unique_id=1049367664 instance=ExtResource("4_8g6xw")]
-position = Vector2(532, 633)
+position = Vector2(630, 283)
 collision_layer = 2
 collision_mask = 5
 
-[node name="1" type="CharacterBody2D" parent="." unique_id=2100541849]
+[node name="1" type="CharacterBody2D" parent="." unique_id=2100541849 groups=["cucarachas"]]
 position = Vector2(43, 282)
 collision_layer = 4
 collision_mask = 11
@@ -2393,7 +2395,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(10, 314)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="2" type="CharacterBody2D" parent="." unique_id=1851977618]
+[node name="2" type="CharacterBody2D" parent="." unique_id=1851977618 groups=["cucarachas"]]
 position = Vector2(41, 464)
 collision_layer = 4
 collision_mask = 11
@@ -2421,7 +2423,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(11, 497)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="3" type="CharacterBody2D" parent="." unique_id=1387033370]
+[node name="3" type="CharacterBody2D" parent="." unique_id=1387033370 groups=["cucarachas"]]
 position = Vector2(40, 657)
 collision_layer = 4
 collision_mask = 11
@@ -2448,7 +2450,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(478, 507)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="4" type="CharacterBody2D" parent="." unique_id=83949760]
+[node name="4" type="CharacterBody2D" parent="." unique_id=83949760 groups=["cucarachas"]]
 position = Vector2(684, 280)
 collision_layer = 4
 collision_mask = 11
@@ -2475,7 +2477,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(50, 313)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="5" type="CharacterBody2D" parent="." unique_id=348061914]
+[node name="5" type="CharacterBody2D" parent="." unique_id=348061914 groups=["cucarachas"]]
 position = Vector2(682, 462)
 collision_layer = 4
 collision_mask = 11
@@ -2502,7 +2504,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(50, 494)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="6" type="CharacterBody2D" parent="." unique_id=459216038]
+[node name="6" type="CharacterBody2D" parent="." unique_id=459216038 groups=["cucarachas"]]
 position = Vector2(681, 655)
 collision_layer = 4
 collision_mask = 11
@@ -2529,7 +2531,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(487, 502)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="7" type="CharacterBody2D" parent="." unique_id=102727461]
+[node name="7" type="CharacterBody2D" parent="." unique_id=102727461 groups=["cucarachas"]]
 position = Vector2(1298, 279)
 collision_layer = 4
 collision_mask = 11
@@ -2556,7 +2558,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(56, 315)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="8" type="CharacterBody2D" parent="." unique_id=1133104895]
+[node name="8" type="CharacterBody2D" parent="." unique_id=1133104895 groups=["cucarachas"]]
 position = Vector2(1296, 461)
 collision_layer = 4
 collision_mask = 11
@@ -2583,7 +2585,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(56, 495)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="9" type="CharacterBody2D" parent="." unique_id=840378440]
+[node name="9" type="CharacterBody2D" parent="." unique_id=840378440 groups=["cucarachas"]]
 position = Vector2(1295, 654)
 collision_layer = 4
 collision_mask = 11
@@ -2610,7 +2612,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(56, 502)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="10" type="CharacterBody2D" parent="." unique_id=1228561560]
+[node name="10" type="CharacterBody2D" parent="." unique_id=1228561560 groups=["cucarachas"]]
 position = Vector2(1939, 277)
 collision_layer = 4
 collision_mask = 11
@@ -2637,7 +2639,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(69, 326)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="11" type="CharacterBody2D" parent="." unique_id=1415241890]
+[node name="11" type="CharacterBody2D" parent="." unique_id=1415241890 groups=["cucarachas"]]
 position = Vector2(1937, 459)
 collision_layer = 4
 collision_mask = 11
@@ -2664,7 +2666,7 @@ shape = SubResource("RectangleShape2D_03j50")
 position = Vector2(67, 507)
 shape = SubResource("RectangleShape2D_03j50")
 
-[node name="12" type="CharacterBody2D" parent="." unique_id=1782469581]
+[node name="12" type="CharacterBody2D" parent="." unique_id=1782469581 groups=["cucarachas"]]
 position = Vector2(1936, 652)
 collision_layer = 4
 collision_mask = 11
@@ -2694,7 +2696,7 @@ shape = SubResource("RectangleShape2D_03j50")
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=568426364]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=838949669]
-position = Vector2(1279, 754)
+position = Vector2(1280, 778)
 shape = SubResource("RectangleShape2D_m2pct")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1798850115]
@@ -2704,3 +2706,15 @@ shape = SubResource("RectangleShape2D_pb3um")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=850802052]
 position = Vector2(2541, 406)
 shape = SubResource("RectangleShape2D_pb3um")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1896693803]
+layer = 10
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=58067559]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

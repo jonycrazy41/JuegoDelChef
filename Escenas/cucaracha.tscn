@@ -9,7 +9,7 @@ size = Vector2(30, 50)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pb3um"]
 size = Vector2(20, 77)
 
-[node name="Node2D" type="Node2D" unique_id=2018705945]
+[node name="Node2D" type="Node2D" unique_id=2018705945 groups=["cucarachas"]]
 
 [node name="Cucaracha_!" type="CharacterBody2D" parent="." unique_id=1555785146]
 collision_layer = 2

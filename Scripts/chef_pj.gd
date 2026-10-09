@@ -6,6 +6,7 @@ const AnguloSarten1 = 70.0
 const AnguloSarten2 = -10.0
 const MangoOffset = 6
 
+@onready var camara: Camera2D = $Camera2D
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var sarten: Sprite2D = $Sarten
 @onready var hitbox: Area2D = $Sarten/Hitbox
@@ -20,7 +21,7 @@ func _ready() -> void:
 	hitbox.body_entered.connect(_on_hitbox_body_entered)
 
 func _physics_process(float) -> void:
-	var direction := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var direction := Input.get_vector("izquierda", "derecha", "Arriba", "Abajo")
 	velocity = direction * SPEED
 	move_and_slide()
 	
@@ -61,6 +62,12 @@ func ataque():
 		.set_trans(Tween.TRANS_QUAD)\
 		.set_ease(Tween.EASE_IN_OUT)
 	tween.tween_callback(terminarAtaque)
+	
+	await tween.finished
+	var temblor := create_tween()
+	temblor.tween_property(camara, "offset", Vector2(2, -2), 0.02)
+	temblor.tween_property(camara, "offset", Vector2(-2, 2), 0.02)
+	temblor.tween_property(camara, "offset", Vector2.ZERO, 0.02)
 
 func terminarAtaque():
 	EstaAtacanddo = false
