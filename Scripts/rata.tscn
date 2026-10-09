@@ -49,21 +49,22 @@ animations = [{
 "texture": SubResource("AtlasTexture_em0nj")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"RataCamina",
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_x15ge"]
-radius = 5.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwfle"]
+size = Vector2(69, 42)
 
 [node name="Rata" type="CharacterBody2D" unique_id=1244886540]
 script = ExtResource("1_mwfle")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=438453877]
+position = Vector2(5.5, 5.5)
+scale = Vector2(6.1875, 5.4375)
 sprite_frames = SubResource("SpriteFrames_x15ge")
-frame = 4
-frame_progress = 0.7378375
+animation = &"RataCamina"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=172519269]
-position = Vector2(-1, 3)
-shape = SubResource("CircleShape2D_x15ge")
+position = Vector2(7.5, 23)
+shape = SubResource("RectangleShape2D_mwfle")

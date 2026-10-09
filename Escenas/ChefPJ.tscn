@@ -115,7 +115,7 @@ size = Vector2(20, 12.808989)
 scale = Vector2(2, 2)
 script = ExtResource("1_4lmyk")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=755646668]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=755646668 groups=["player"]]
 sprite_frames = SubResource("SpriteFrames_riqys")
 animation = &"fatalidad"
 

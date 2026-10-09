@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://n8sv0yr6dxuw"]
 
 [ext_resource type="Texture2D" uid="uid://duut445bderrk" path="res://Sprites/horno.png" id="1_k3onv"]
+[ext_resource type="Script" uid="uid://c65fop7rvrvkc" path="res://Scripts/horno.gd" id="1_land4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_land4"]
 atlas = ExtResource("1_k3onv")
@@ -32,7 +33,13 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_riqys"]
 size = Vector2(29, 27)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(53.375, 53.125)
+
 [node name="RigidBody2D" type="RigidBody2D" unique_id=978014273]
+scale = Vector2(2, 2)
+freeze = true
+script = ExtResource("1_land4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1498287413]
 sprite_frames = SubResource("SpriteFrames_bhunq")
@@ -41,3 +48,9 @@ animation = &"prendidooo"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=65882993]
 position = Vector2(-0.5, -1.5)
 shape = SubResource("RectangleShape2D_riqys")
+
+[node name="Interactuable" type="Area2D" parent="." unique_id=1459191835]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactuable" unique_id=530866843]
+shape = SubResource("RectangleShape2D_bhunq")
