@@ -1,17 +1,11 @@
 [gd_scene format=3 uid="uid://b3s2ck2v73wgm"]
 
 [ext_resource type="Script" uid="uid://bihohi6i0np03" path="res://menu_2.gd" id="1_6eqnb"]
-[ext_resource type="Texture2D" uid="uid://rct2bfbn01tl" path="res://sprites/fbe446c7-422e-4e1e-be3c-1c3d446406e7.jpg" id="1_ag7pc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b52nb"]
 bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ag7pc"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2pct"]
-bg_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2insv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pb3um"]
 bg_color = Color(0, 0, 0, 1)
@@ -28,11 +22,6 @@ offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_6eqnb")
-
-[node name="FONDO" type="Sprite2D" parent="." unique_id=1440570840]
-position = Vector2(653, 362.00003)
-scale = Vector2(2.4103954, 2.2153761)
-texture = ExtResource("1_ag7pc")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1025295845]
 layout_mode = 1
@@ -56,16 +45,7 @@ size_flags_vertical = 4
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_b52nb")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ag7pc")
-text = "JUGAR NIVEL 1"
-
-[node name="NIVEL 2" type="Button" parent="VBoxContainer" unique_id=346852224]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_m2pct")
-theme_override_styles/hover = SubResource("StyleBoxFlat_2insv")
-text = "JUGAR NIVEL 2"
+text = "JUGAR"
 
 [node name="SALIR" type="Button" parent="VBoxContainer" unique_id=1787340632]
 layout_mode = 2
@@ -77,5 +57,4 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_whuaa")
 text = "SALIR"
 
 [connection signal="pressed" from="VBoxContainer/NIVEL 1" to="." method="_on_nivel_1_pressed"]
-[connection signal="pressed" from="VBoxContainer/NIVEL 2" to="." method="_on_nivel_2_pressed"]
 [connection signal="pressed" from="VBoxContainer/SALIR" to="." method="_on_salir_pressed"]
