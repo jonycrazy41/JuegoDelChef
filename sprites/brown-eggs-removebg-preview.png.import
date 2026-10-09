@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwok3loqmtf3y"
-path="res://.godot/imported/brown-eggs-removebg-preview.png-835a9553d686355718c7701fdf5a358f.ctex"
+path="res://.godot/imported/brown-eggs-removebg-preview.png-50d31d3ee9b87788d72cd1da250bda8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/brown-eggs-removebg-preview.png"
-dest_files=["res://.godot/imported/brown-eggs-removebg-preview.png-835a9553d686355718c7701fdf5a358f.ctex"]
+source_file="res://sprites/brown-eggs-removebg-preview.png"
+dest_files=["res://.godot/imported/brown-eggs-removebg-preview.png-50d31d3ee9b87788d72cd1da250bda8a.ctex"]
 
 [params]
 

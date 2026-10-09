@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rah0gw10rvwy"
-path="res://.godot/imported/professional_kitchen_room_door_tiles.png-6871c9dd48615bee3ee19afc0869a29a.ctex"
+uid="uid://cwloapxgs5fgp"
+path="res://.godot/imported/Idle.png-4c259d6ef325ec19f29f7f8c54bbbb14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/professional_kitchen_room_door_tiles.png"
-dest_files=["res://.godot/imported/professional_kitchen_room_door_tiles.png-6871c9dd48615bee3ee19afc0869a29a.ctex"]
+source_file="res://Idle.png"
+dest_files=["res://.godot/imported/Idle.png-4c259d6ef325ec19f29f7f8c54bbbb14.ctex"]
 
 [params]
 
