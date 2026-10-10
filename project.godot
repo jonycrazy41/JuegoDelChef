@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="JuegoDelChef"
-run/main_scene="uid://b7qgxvw1opl62"
+run/main_scene="uid://b3s2ck2v73wgm"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
