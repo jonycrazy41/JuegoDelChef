@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cft41c2b42bwe"
-path="res://.godot/imported/Sarten.png-24330ae9a79cac1cee6359485262802b.ctex"
+path="res://.godot/imported/Sarten.png-d6b6f22e641f67479756437ebec8f36e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sarten.png"
-dest_files=["res://.godot/imported/Sarten.png-24330ae9a79cac1cee6359485262802b.ctex"]
+source_file="res://Sprites/Sarten.png"
+dest_files=["res://.godot/imported/Sarten.png-d6b6f22e641f67479756437ebec8f36e.ctex"]
 
 [params]
 

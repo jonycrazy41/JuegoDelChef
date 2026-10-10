@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbej3v8dr3dvn"
-path="res://.godot/imported/Manteca1.png-4092f7c8ec9b58a776ff17b3375f7ee4.ctex"
+path="res://.godot/imported/Manteca1.png-7fd8d38e8158b17643b667d33245a637.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Manteca1.png"
-dest_files=["res://.godot/imported/Manteca1.png-4092f7c8ec9b58a776ff17b3375f7ee4.ctex"]
+source_file="res://Sprites/Manteca1.png"
+dest_files=["res://.godot/imported/Manteca1.png-7fd8d38e8158b17643b667d33245a637.ctex"]
 
 [params]
 
