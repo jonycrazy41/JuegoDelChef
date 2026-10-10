@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkthhiyb3deyh"
-path="res://.godot/imported/Paquetedepepass.png-9637dfa443a8942e0a122de755998a24.ctex"
+uid="uid://c2gktuvjk8f8v"
+path="res://.godot/imported/membri (1).png-d5c24ad4bd4daffb2e9a1f8719c7396c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Paquetedepepass.png"
-dest_files=["res://.godot/imported/Paquetedepepass.png-9637dfa443a8942e0a122de755998a24.ctex"]
+source_file="res://sprites/membri (1).png"
+dest_files=["res://.godot/imported/membri (1).png-d5c24ad4bd4daffb2e9a1f8719c7396c.ctex"]
 
 [params]
 

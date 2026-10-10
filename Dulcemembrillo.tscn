@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cvqjd77eyw6if"]
+
+[ext_resource type="Texture2D" uid="uid://c2gktuvjk8f8v" path="res://sprites/membri (1).png" id="1_82bva"]
+[ext_resource type="Script" uid="uid://dprhih64hdkw4" path="res://dulcemembrillo.gd" id="1_etapq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x15ge"]
+size = Vector2(60, 29)
+
+[node name="DulceMembrillo" type="Area2D" unique_id=1131383161]
+script = ExtResource("1_etapq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=98598213]
+scale = Vector2(0.1357143, 0.13571429)
+texture = ExtResource("1_82bva")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1035871341]
+position = Vector2(2, -5.5)
+shape = SubResource("RectangleShape2D_x15ge")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

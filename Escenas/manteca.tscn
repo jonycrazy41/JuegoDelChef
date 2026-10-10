@@ -4,18 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://bbej3v8dr3dvn" path="res://sprites/Manteca1.png" id="2_6c68q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x15ge"]
-size = Vector2(86, 71)
+size = Vector2(50, 29)
 
 [node name="Manteca" type="Area2D" unique_id=538394201]
 script = ExtResource("1_m5fnb")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=567927959]
 position = Vector2(1.5258789e-05, -1)
-scale = Vector2(0.38666666, 0.38)
+scale = Vector2(0.2666666, 0.26206887)
 texture = ExtResource("2_6c68q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=153922472]
-position = Vector2(-5, -3.5)
+position = Vector2(-1, -5)
 shape = SubResource("RectangleShape2D_x15ge")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
