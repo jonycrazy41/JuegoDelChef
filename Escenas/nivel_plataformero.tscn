@@ -17,6 +17,8 @@
 [ext_resource type="Script" uid="uid://chocuw1yc1aof" path="res://Escenas/area_2d.gd" id="13_qvmuk"]
 [ext_resource type="PackedScene" uid="uid://cvqjd77eyw6if" path="res://Dulcemembrillo.tscn" id="15_6b88q"]
 [ext_resource type="PackedScene" uid="uid://do87dygxe3dd3" path="res://Escenas/manteca.tscn" id="16_8kdl3"]
+[ext_resource type="PackedScene" uid="uid://cxbniwfsrfeqt" path="res://carta.tscn" id="18_02pyq"]
+[ext_resource type="AudioStream" uid="uid://bwd1pgk7yb4fv" path="res://Sonido Ingredientes.mp3" id="19_77jxa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0qpke"]
 texture = ExtResource("1_832p0")
@@ -2970,11 +2972,11 @@ scale = Vector2(-7.9245133, 7.30017)
 texture = ExtResource("8_6bla8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta" unique_id=1096991920]
-position = Vector2(3, -95)
+position = Vector2(3, -68)
 shape = SubResource("RectangleShape2D_rtqtc")
 
 [node name="DulceMembrillo" parent="." unique_id=595387886 instance=ExtResource("15_6b88q")]
-position = Vector2(746, -903)
+position = Vector2(773, -901)
 
 [node name="Rata2" parent="." unique_id=1020889437 instance=ExtResource("11_t84ow")]
 position = Vector2(760, -690)
@@ -2982,8 +2984,8 @@ position = Vector2(760, -690)
 [node name="Manteca" parent="." unique_id=538394201 instance=ExtResource("16_8kdl3")]
 position = Vector2(2563, 592)
 
-[node name="Bruno2" type="CharacterBody2D" parent="." unique_id=1415058653]
-position = Vector2(1863, -1186)
+[node name="Bruno2" type="CharacterBody2D" parent="." unique_id=1415058653 groups=["player"]]
+position = Vector2(64, 575)
 script = ExtResource("4_qvmuk")
 metadata/_edit_group_ = true
 
@@ -2999,5 +3001,14 @@ shape = SubResource("RectangleShape2D_x15ge")
 
 [node name="Camera2D" type="Camera2D" parent="Bruno2" unique_id=414731063]
 
-[connection signal="area_entered" from="Puerta" to="Puerta" method="_on_area_entered"]
+[node name="IntroLayer" type="CanvasLayer" parent="." unique_id=1994848121]
+
+[node name="Carta" parent="IntroLayer" unique_id=1409495722 instance=ExtResource("18_02pyq")]
+position = Vector2(636, 277.00003)
+scale = Vector2(0.8098144, 0.8098144)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=687821778]
+stream = ExtResource("19_77jxa")
+volume_db = 17.334
+
 [connection signal="body_entered" from="Puerta" to="Puerta" method="_on_body_entered"]

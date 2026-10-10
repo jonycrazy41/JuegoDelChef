@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cxbniwfsrfeqt"]
+
+[ext_resource type="Texture2D" uid="uid://cv24wjkd5bv31" path="res://sprites/Pepe carta.png" id="1_nqtiw"]
+
+[node name="Carta" type="Sprite2D" unique_id=1409495722]
+texture = ExtResource("1_nqtiw")
