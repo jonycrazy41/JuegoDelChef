@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://72pb2ckwgq7a"
-path="res://.godot/imported/Wooden_Barrel.png-d29d9e35265120e8809df2d103f322e6.ctex"
+path="res://.godot/imported/Wooden_Barrel.png-4e014b6051c85fb964cc8a8fc5e8bdd2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Wooden_Barrel.png"
-dest_files=["res://.godot/imported/Wooden_Barrel.png-d29d9e35265120e8809df2d103f322e6.ctex"]
+source_file="res://Sprites/Wooden_Barrel.png"
+dest_files=["res://.godot/imported/Wooden_Barrel.png-4e014b6051c85fb964cc8a8fc5e8bdd2.ctex"]
 
 [params]
 
